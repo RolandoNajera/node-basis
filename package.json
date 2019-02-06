@@ -1,0 +1,30 @@
+{
+  "name": "node-basis",
+  "version": "1.0.0",
+  "description": "learning node basis",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RolandoNajera/node-basis.git"
+  },
+  "keywords": [
+    "node",
+    "basis",
+    "rolando"
+  ],
+  "author": "Rolando Najera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RolandoNajera/node-basis/issues"
+  },
+  "homepage": "https://github.com/RolandoNajera/node-basis#readme",
+  "dependencies": {
+    "yargs": "^12.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}

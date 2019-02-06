@@ -1,7 +1,20 @@
-let mult = require('./multiply/multiply');
+const argv = require('./config/yargs').argv;
+let {createFile, listTable} = require('./multiply/multiply');
 
-let base = '5';
+let command = argv._[0];
 
-mult.createFile(base)
-    .then(file => console.log(`file created ${ file }`))
-    .catch(err => console.log(err));
+switch(command) {
+    case 'list':
+        listTable(argv.base, argv.limit);
+    break;
+    case 'create':
+        console.log(`here: ${argv.base}`)
+        createFile(argv.base, argv.limit)
+        .then(file => console.log(`file created ${ file }`))
+        .catch(err => console.log(err));
+    break;
+    default:
+        console.log('command no valid');
+    break;
+}
+
